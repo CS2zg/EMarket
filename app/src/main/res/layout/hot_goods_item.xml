@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_fillet">
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/hot_goods_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/g1"/>
+    <TextView
+        android:id="@+id/hot_goods_name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="夏季潮牌ins韩版小飞象T恤女韩版宽松印花明星同款卡通情侣短袖"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/RMB"/>
+        <TextView
+            android:id="@+id/hot_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:text="190.00"/>
+    </LinearLayout>
+
+
+</LinearLayout>

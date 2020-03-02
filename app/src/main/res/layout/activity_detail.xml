@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E4E4"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:orientation="vertical">
+    <include layout="@layout/nav_top"></include>
+    <LinearLayout
+        android:id="@+id/detail_headimg_l"
+        style="@style/info_layout"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            style="@style/info_text"
+            android:text="头像"/>
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/head"
+            app:riv_oval="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+    <View
+        style="@style/underline"
+        android:layout_marginLeft="15dp"/>
+    <LinearLayout
+        android:id="@+id/detail_name_l"
+        style="@style/info_layout">
+        <TextView
+            style="@style/info_text"
+            android:text="用户名"/>
+
+        <TextView
+            android:id="@+id/detail_name"
+            style="@style/info_detail"
+            android:text="未登录" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+    <View
+        style="@style/underline"
+        android:layout_marginLeft="15dp"/>
+    <LinearLayout
+        android:id="@+id/detail_account_l"
+        style="@style/info_layout">
+        <TextView
+            style="@style/info_text"
+            android:text="账号"/>
+
+        <TextView
+            android:id="@+id/detail_account"
+            style="@style/info_detail"
+            android:text="未登录" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+    <View
+        style="@style/underline"
+        android:layout_marginLeft="15dp"/>
+    <LinearLayout
+        android:id="@+id/detail_password_l"
+        style="@style/info_layout">
+        <TextView
+            style="@style/info_text"
+            android:text="密码"/>
+        <TextView
+            style="@style/info_detail"
+            android:text="修改密码"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/detail_address_l"
+        style="@style/info_layout"
+        android:layout_marginTop="20dp">
+        <TextView
+            style="@style/info_text"
+            android:text="收货地址"/>
+        <TextView
+            android:id="@+id/detail_address"
+            style="@style/info_detail"
+            android:text="未设置"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/bg_gradient"
+        android:text="切换用户"
+        android:textSize="24sp" />
+
+</LinearLayout>

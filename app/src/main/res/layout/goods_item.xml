@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:padding="10dp"
+    android:orientation="horizontal">
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/goods_item_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/g3"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <!--商品名-->
+        <TextView
+            android:id="@+id/goods_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="xxx"
+            android:textColor="#000000"
+            android:textSize="@dimen/dp_20" />
+        <!--价钱-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp">
+
+            <TextView style="@style/RMB" />
+
+            <TextView
+                android:id="@+id/goods_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="#FF0000"
+                android:textSize="17dp" />
+        </LinearLayout>
+        <!--删除、时间-->
+        <LinearLayout
+            android:id="@+id/other_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/bg_fillet">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/delete_mini"
+                app:riv_border_color="#bfbfbf"
+                app:riv_border_width="1dp"
+                app:riv_oval="true" />
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete_mini" />-->
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

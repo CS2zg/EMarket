@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <CheckBox
+        android:id="@+id/isChecked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="50dp"/>
+    <!--商品图片-->
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/item_img"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" />
+    <!--商品名称-->
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:lines="2"
+        android:ellipsize="end"/>
+    <!--商品数量单价-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+        <TextView style="@style/RMB"></TextView>
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+
+            android:textColor="@color/colorPrice"/>
+    </LinearLayout>
+
+    <!--该商品数量减1-->
+    <TextView
+        android:id="@+id/item_sub"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="116dp"
+        android:layout_marginTop="81dp"
+        android:background="#CECEB4"
+        android:gravity="center"
+        android:text="-" />
+    <!--商品数量-->
+    <TextView
+        android:id="@+id/item_qual"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#CECEB4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="81dp"
+        android:layout_marginTop="81dp"
+        android:gravity="center"
+        android:text="1" />
+    <!--该商品数量加1-->
+    <TextView
+        android:id="@+id/item_add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="81dp"
+        android:background="#CECEB4"
+        android:gravity="center"
+        android:text="+" />
+    <!--从购物车中删除商品-->
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_delete"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        app:riv_border_width="1dp"
+        app:riv_border_color="#bfbfbf"
+        app:riv_oval="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/delete_mini"
+        />
+</RelativeLayout>

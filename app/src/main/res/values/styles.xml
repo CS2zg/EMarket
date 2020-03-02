@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="NewAppTheme" parent="Theme.AppCompat.NoActionBar"></style>
+    <!--人民币符-->
+    <style name="RMB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:text">￥</item>
+    </style>
+    <!--用户信息详情页布局样式-->
+    <style name="info_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">#FFFFFF</item>
+        <!--<item name="android:layout_marginTop">20dp</item>-->
+        <item name="android:padding">15dp</item>
+
+    </style>
+    <!--用户信息详情页文本标题样式-->
+    <style name="info_text">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <!--用户信息详情页文本详情样式-->
+    <style name="info_detail">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textColor">#BFBFBF</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <!--下划线样式-->
+    <style name="underline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#BEBBBB</item>
+    </style>
+</resources>

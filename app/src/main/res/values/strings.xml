@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">E-market</string>
+    <string name="title_home">主页</string>
+    <string name="title_message">消息</string>
+    <string name="title_sort">分类</string>
+    <string name="title_cart">购物车</string>
+    <string name="title_mine">我的</string>
+    <string name="sign_in">登录</string>
+    <string name="sign_up">注册</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

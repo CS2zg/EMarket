@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.GoodsActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/goods_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/g3" />
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/go_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/left_arrow_gray" />
+    </LinearLayout>
+    </FrameLayout>
+    <!--详情-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <!--价格栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/RMB"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="190.00"
+                android:textColor="#FF0000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/go_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share" />
+        </LinearLayout>
+        <!--商品名以及描述-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:src="@drawable/e_market" />
+                <TextView
+                    android:id="@+id/goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+                    android:text="Koradior/珂莱蒂尔品牌秋装时尚红色修身休闲无袖收腰连衣裙 "/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Other description is temporarily empty."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:text="Please stay tuned."/>
+    </LinearLayout>
+    <!--底部工具栏-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <View style="@style/underline"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/go_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableTop="@drawable/shop"
+                android:text="进店" />
+
+            <Button
+                android:id="@+id/add_collections"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableTop="@drawable/fond"
+                android:text="收藏" />
+
+            <Button
+                android:id="@+id/go_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableTop="@drawable/goods_cart"
+                android:text="购物车" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/add_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/goods_btn_left"
+                    android:gravity="center"
+                    android:text="加入购物车"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/go_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/goods_btn_right"
+                    android:gravity="center"
+                    android:text="立即购买"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
